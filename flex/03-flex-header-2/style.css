@@ -12,7 +12,27 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:8px;
 }
+
+.first-partition {
+  display: flex;
+}
+ul{
+  display: flex;
+  gap:12px;
+}
+
+.second-partition{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
 
 .profile-image {
   background: rebeccapurple;
@@ -20,6 +40,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  min-width: none;
 }
 
 .logo {
@@ -35,7 +56,11 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  height: 30px;
+  flex: 1 1 auto;
 }
+
+
 
 a {
   /* this removes the line under our links */
